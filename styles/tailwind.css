@@ -50,17 +50,18 @@
 .header-main{
   @apply flex justify-items-start mb-4
 }
+
 .icon-theme{
     @apply w-8 h-8 rounded-xl top-0 right-0 absolute m-4
 }
 
 .titulo {
-    @apply text-3xl m-2 relative     overflow-hidden
+    @apply text-3xl m-2 overflow-hidden 
 }
 
-/* .letter .titulo {
-  @apply opacity-0 inline-block
-} */
+.letter .titulo {
+  @apply  inline-block
+}
 
   @screen sm {
 

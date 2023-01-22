@@ -1,3 +1,4 @@
+import anime from "animejs";
 import React, { useEffect, useState } from "react";
 import { ReactComponent as Moon } from "../../assets/moon.svg";
 import { ReactComponent as Sun } from "../../assets/sun.svg";
@@ -22,9 +23,30 @@ const Header = () => {
     document.documentElement.classList.value = tema;
   };
 
+useEffect(() => {
+  var textWrapper = document.querySelector(".titulo");
+
+  textWrapper.innerHTML = textWrapper.textContent.replace(
+    /\S/g,
+    "<span class='letter'>$&</span>"
+  );
+
+  anime.timeline().add({
+    targets: ".titulo .letter",
+    translateY: [200, 0],
+    easing: "easeInExpo",
+    opacity: 100,
+    duration: 1700,
+    delay: (el, i) => 400 + 70 * i,
+  });
+
+
+}, [])
+
+
   return (
     <header className="header-main">
-      <h1 className="titulo animation-fadeInLeft">Portfolio fullstack</h1>
+      <h1 className="titulo">Portfolio fullstack</h1>
 
       <button
         onClick={() => {

@@ -554,15 +554,14 @@ video {
   border-radius: 0.75rem;
 }
 .titulo {
-  position: relative;
   margin: 0.5rem;
   overflow: hidden;
   font-size: 1.875rem;
   line-height: 2.25rem;
 }
-/* .letter .titulo {
-  @apply opacity-0 inline-block
-} */
+.letter .titulo {
+  display: inline-block;
+}
 @media (min-width: 640px) {
 
 

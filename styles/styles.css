@@ -379,8 +379,15 @@ video {
     font-family: cursive, roboto , system-ui, sans-serif;
   }
   body {
+  margin: 1rem;
   --tw-bg-opacity: 1;
-  background-color: rgb(153 27 27 / var(--tw-bg-opacity));
+  background-color: rgb(203 213 225 / var(--tw-bg-opacity));
+}
+  .dark body {
+  --tw-bg-opacity: 1;
+  background-color: rgb(15 23 42 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(203 213 225 / var(--tw-text-opacity));
 }
 
   h1 {
@@ -506,6 +513,20 @@ video {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
+.button {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  margin: 1rem;
+  border-radius: 0.75rem;
+  border-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgb(127 29 29 / var(--tw-border-opacity));
+}
+.titulo {
+  font-size: 3.75rem;
+  line-height: 1;
+}
 @media (min-width: 640px) {
 
 
@@ -522,3 +543,9 @@ video {
 
  
   }
+.flex {
+  display: flex;
+}
+.justify-center {
+  justify-content: center;
+}

@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { useEffect, useState } from "react";
+import Header from "../components/Header";
 
 const Index = () => {
-  return (
-    <div>Index</div>
-  )
-}
 
-export default Index
+  return (
+    <div className="flex justify-center">
+      <Header/>
+    </div>
+  );
+};
+
+export default Index;

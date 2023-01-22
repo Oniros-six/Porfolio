@@ -514,14 +514,18 @@ video {
   --tw-backdrop-sepia:  ;
 }
 .button {
+  border-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgb(127 29 29 / var(--tw-border-opacity));
+}
+.icon-theme {
   position: absolute;
   top: 0px;
   right: 0px;
   margin: 1rem;
+  height: 2.5rem;
+  width: 2.5rem;
   border-radius: 0.75rem;
-  border-width: 2px;
-  --tw-border-opacity: 1;
-  border-color: rgb(127 29 29 / var(--tw-border-opacity));
 }
 .titulo {
   font-size: 3.75rem;
@@ -546,6 +550,13 @@ video {
 .flex {
   display: flex;
 }
+.transform {
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
 .justify-center {
   justify-content: center;
+}
+.bg-red-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(153 27 27 / var(--tw-bg-opacity));
 }

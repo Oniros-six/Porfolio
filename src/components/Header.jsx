@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react";
+import { ReactComponent as Moon } from "../../assets/moon.svg";
+import { ReactComponent as Sun } from "../../assets/sun.svg";
 
 const Header = () => {
   const [tema, setTema] = useState("dark");
-    
+
   useEffect(() => {
     if (
       localStorage.theme === "dark" ||
@@ -22,15 +24,23 @@ const Header = () => {
   return (
     <div className="flex">
       <h1 className="titulo">Portfolio fullstack</h1>
-      
-      <button
-        className="button"
-        onClick={() => {
-          cambiarFondo();
-        }}
-      >
-        Cambiar fondo
-      </button>
+      {tema === "dark" ? (
+        <button
+          onClick={() => {
+            cambiarFondo();
+          }}
+        >
+          <Sun />
+        </button>
+      ) : (
+        <button
+          onClick={() => {
+            cambiarFondo();
+          }}
+        >
+          <Moon />
+        </button>
+      )}
     </div>
   );
 };

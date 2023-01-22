@@ -41,7 +41,11 @@
 
 .button {
 
-    @apply border-2 border-red-900 rounded-xl top-0 right-0 absolute m-4
+    @apply border-2 border-red-900 
+}
+
+.icon-theme{
+    @apply w-10 h-10 rounded-xl top-0 right-0 absolute m-4
 }
 
 .titulo {

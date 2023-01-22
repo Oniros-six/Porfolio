@@ -8,7 +8,7 @@
     font-family: cursive, roboto , system-ui, sans-serif;
   }
   body {
-    @apply  bg-slate-300 dark:bg-slate-900 dark:text-slate-300 m-4
+    @apply  bg-slate-300 dark:bg-slate-900 dark:text-slate-300 m-1 sm:m-1 md:m-2 lg:m-4
   }
 
   h1 {
@@ -40,20 +40,27 @@
 @layer components {
 
 .button {
-
     @apply border-2 border-red-900 
 }
 
+.index-main {
+  @apply m-0
+}
+
+.header-main{
+  @apply flex justify-items-start mb-4
+}
 .icon-theme{
-    @apply w-10 h-10 rounded-xl top-0 right-0 absolute m-4
+    @apply w-8 h-8 rounded-xl top-0 right-0 absolute m-4
 }
 
 .titulo {
-    @apply text-6xl
+    @apply text-3xl m-2 relative     overflow-hidden
 }
 
-
-
+/* .letter .titulo {
+  @apply opacity-0 inline-block
+} */
 
   @screen sm {
 

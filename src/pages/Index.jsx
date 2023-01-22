@@ -4,7 +4,7 @@ import Header from "../components/Header";
 const Index = () => {
 
   return (
-    <div className="flex justify-center">
+    <div className="index-main">
       <Header/>
     </div>
   );

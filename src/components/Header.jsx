@@ -12,6 +12,7 @@ const Header = () => {
         window.matchMedia("(prefers-color-scheme: dark)").matches)
     ) {
       document.documentElement.classList.value = localStorage.theme;
+      cambiarFondo();
     }
   }, []);
 
@@ -22,26 +23,21 @@ const Header = () => {
   };
 
   return (
-    <div className="flex">
-      <h1 className="titulo">Portfolio fullstack</h1>
-      {tema === "dark" ? (
-        <button
-          onClick={() => {
-            cambiarFondo();
-          }}
-        >
-          <Sun />
-        </button>
-      ) : (
-        <button
-          onClick={() => {
-            cambiarFondo();
-          }}
-        >
-          <Moon />
-        </button>
-      )}
-    </div>
+    <header className="header-main">
+      <h1 className="titulo animation-fadeInLeft">Portfolio fullstack</h1>
+
+      <button
+        onClick={() => {
+          cambiarFondo();
+        }}
+      >
+        {tema === "dark" ? <Moon /> : <Sun />}
+      </button>
+
+      {/* <div className="text-xl font-semibold md:text-3xl">
+        developer by choice and designer for fun
+      </div> */}
+    </header>
   );
 };
 

@@ -39,7 +39,6 @@
 
 @layer components {
 
-
 .descripcion{
    @apply text-lg font-semibold
 }

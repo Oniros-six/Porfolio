@@ -22,15 +22,16 @@ const Titulo = () => {
     });
 
     const rect = titulo.current.getBoundingClientRect();
-const screenWidth = window.innerWidth;
-const xPos = (screenWidth - rect.width) / 2;
-
+    const screenWidth = window.innerWidth;
+    const xPos = (screenWidth - rect.width) / 2;
+    
     anime.timeline().add({
       targets: ".titulo",
-      translate: xPos,
+      translateX: xPos,
       easing: 'easeInOutElastic(1, .6)',
       delay: 2300
     });
+
   }, []);
 
 

@@ -39,16 +39,16 @@
 
 @layer components {
 
-.button {
-    @apply border-2 border-red-900 
-}
 
+.descripcion{
+   @apply text-lg font-semibold
+}
 .index-main {
-  @apply m-0
+  @apply m-0 
 }
 
 .header-main{
-  @apply flex justify-items-start mb-4
+  @apply inline-block mb-4 
 }
 
 .icon-theme{
@@ -56,7 +56,7 @@
 }
 
 .titulo {
-    @apply text-3xl m-2 overflow-hidden 
+    @apply text-xl m-2 overflow-hidden 
 }
 
 .letter .titulo {
@@ -77,7 +77,10 @@
 
   @screen lg {
 
-
+    .titulo {
+      @apply text-6xl 
+  }
+  
   }
 
 

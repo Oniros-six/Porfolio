@@ -531,18 +531,17 @@ video {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
-.button {
-  border-width: 2px;
-  --tw-border-opacity: 1;
-  border-color: rgb(127 29 29 / var(--tw-border-opacity));
+.descripcion {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 600;
 }
 .index-main {
   margin: 0px;
 }
 .header-main {
   margin-bottom: 1rem;
-  display: flex;
-  justify-items: start;
+  display: inline-block;
 }
 .icon-theme {
   position: absolute;
@@ -556,8 +555,8 @@ video {
 .titulo {
   margin: 0.5rem;
   overflow: hidden;
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 .letter .titulo {
   display: inline-block;
@@ -572,23 +571,13 @@ video {
   }
 @media (min-width: 1024px) {
 
-
+    .titulo {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+  
   }
 @media (min-width: 1280px) {
 
  
   }
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-.font-semibold {
-  font-weight: 600;
-}
-@media (min-width: 768px) {
-
-  .md\:text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
-  }
-}

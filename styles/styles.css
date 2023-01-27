@@ -374,9 +374,8 @@ video {
 [hidden] {
   display: none;
 }
-
   html {
-    font-family: cursive, roboto , system-ui, sans-serif;
+    font-family: cursive, roboto, system-ui, sans-serif;
   }
   body {
   margin: 0.25rem;
@@ -531,26 +530,13 @@ video {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
-.descripcion {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-  font-weight: 600;
-}
 .index-main {
   margin: 0px;
 }
+/* HEADER */
 .header-main {
   margin-bottom: 1rem;
   display: inline-block;
-}
-.icon-theme {
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  margin: 1rem;
-  height: 2rem;
-  width: 2rem;
-  border-radius: 0.75rem;
 }
 .titulo {
   margin: 0.5rem;
@@ -558,26 +544,55 @@ video {
   font-size: 2.25rem;
   line-height: 2.5rem;
 }
-.letter .titulo {
-  display: inline-block;
+.icon-theme {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  margin: 1rem;
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 0.75rem;
 }
+.descripcion {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+}
+/* HEADER END */
 @media (min-width: 640px) {
-
-
+    .icon-theme {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    margin: 1rem;
+    height: 1.75rem;
+    width: 1.75rem;
+    border-radius: 0.75rem;
+  }
   }
 @media (min-width: 768px) {
-
-
+    .icon-theme {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    margin: 1rem;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 0.75rem;
   }
-@media (min-width: 1024px) {
 
     .titulo {
     font-size: 3.75rem;
     line-height: 1;
   }
-  
+
+    .descripcion {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 600;
+  }
+  }
+@media (min-width: 1024px) {
   }
 @media (min-width: 1280px) {
-
- 
   }

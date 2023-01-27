@@ -554,10 +554,9 @@ video {
 }
 .titulo {
   margin: 0.5rem;
-  display: flex;
   overflow: hidden;
-  font-size: 1.5rem;
-  line-height: 2rem;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 .letter .titulo {
   display: inline-block;

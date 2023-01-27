@@ -55,7 +55,7 @@
 }
 
 .titulo {
-    @apply text-2xl m-2 overflow-hidden flex
+    @apply text-3xl m-2 overflow-hidden
 }
 
 .letter .titulo {

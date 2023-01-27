@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import { ReactComponent as Moon } from "../../assets/moon.svg";
-import { ReactComponent as Sun } from "../../assets/sun.svg";
+import { ReactComponent as Moon } from "../../../assets/moon.svg";
+import { ReactComponent as Sun } from "../../../assets/sun.svg";
 import Titulo from "./Titulo";
-import Boton from "./Boton";
+import Boton from "../Boton";
 
 const Header = () => {
   const [tema, setTema] = useState("dark");
@@ -26,7 +26,7 @@ const Header = () => {
 
   return (
     <header className="header-main">
-      <Titulo />
+      <Titulo tema={localStorage.theme} />
 
       <Boton
         onClick={() => {
@@ -34,7 +34,6 @@ const Header = () => {
         }}
         nombre={tema === "dark" ? <Moon /> : <Sun />}
       />
-
 
       <div className="descripcion">
         Developer by choice and designer for fun

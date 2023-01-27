@@ -1,8 +1,10 @@
 import React, { useEffect, useRef } from "react";
 import anime from "animejs";
 
-const Titulo = () => {
+const Titulo = (prop) => {
   const titulo = useRef();
+  const colorInicial = prop.tema === "dark"? "#701a75" : "#f0abfc"
+  const colorFinal = prop.tema === "dark"? "#f0abfc" : "#701a75"
 
   useEffect(() => {
     var textWrapper = titulo.current;
@@ -17,7 +19,7 @@ const Titulo = () => {
       easing: "easeInOutQuad",
       opacity: [0, 1],
       duration: 1000,
-      keyframes: [{ color: "#701a75" }, { color: "#f0abfc" }],
+      keyframes: [{ color: colorInicial }, {color: colorFinal }],
       delay: (el, i) => 330 + 70 * i,
     });
 
@@ -32,7 +34,7 @@ const Titulo = () => {
       delay: 2300
     });
 
-  }, []);
+  }, [prop.tema]);
 
 
   return (

@@ -58,10 +58,22 @@
   }
   /* HEADER END */
 
+  /* TECNOLOGIAS */
+  .tecnologias-box{
+    @apply bg-gray-300 border-4 border-primary p-2 m-2 grid grid-cols-5 gap-2
+  }
+
+/* TECNOLOGIAS END */
+
+
   @screen sm {
     .icon-theme {
       @apply w-7 h-7 rounded-xl top-0 right-0 absolute m-4;
     }
+    .tecnologias-box{
+      @apply grid-cols-6
+    }
+
   }
 
   @screen md {

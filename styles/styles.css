@@ -559,6 +559,20 @@ video {
   font-weight: 600;
 }
 /* HEADER END */
+/* TECNOLOGIAS */
+.tecnologias-box {
+  margin: 0.5rem;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 0.5rem;
+  border-width: 4px;
+  --tw-border-opacity: 1;
+  border-color: rgb(112 26 117 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
+  padding: 0.5rem;
+}
+/* TECNOLOGIAS END */
 @media (min-width: 640px) {
     .icon-theme {
     position: absolute;
@@ -569,6 +583,10 @@ video {
     width: 1.75rem;
     border-radius: 0.75rem;
   }
+    .tecnologias-box {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+
   }
 @media (min-width: 768px) {
     .icon-theme {

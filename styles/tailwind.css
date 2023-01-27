@@ -55,7 +55,7 @@
 }
 
 .titulo {
-    @apply text-5xl m-2 overflow-hidden
+    @apply text-4xl m-2 overflow-hidden
 }
 
 .letter .titulo {

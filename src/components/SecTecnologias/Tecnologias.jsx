@@ -1,6 +1,17 @@
-import React from "react";
+import React,{useState} from "react";
+import Boton from "../Boton"
 
 const Tecnologias = () => {
+  const [clase, setClase] = useState("hidden")
+
+ const cambiarVisibilidad = () =>{
+    if(clase === "hidden"){
+      setClase("visibile")
+    }else{
+      setClase("hidden")
+    }
+  }
+  
   return (
     <div className="tecnologias-box">
       {/* FRONT */}
@@ -30,98 +41,99 @@ const Tecnologias = () => {
         alt="React"
       />
       <img
-        className="tecnologias-iconos"
+        className={clase}
         src="https://skillicons.dev/icons?i=nextjs"
         alt="NextJs"
       />
       <img
-        className="tecnologias-iconos"
+        className={clase}
         src="https://skillicons.dev/icons?i=redux"
         alt="Redux"
       />
       <img
-        className="tecnologias-iconos"
+        className={clase}
         src="https://skillicons.dev/icons?i=tailwind"
         alt="Tailwind"
       />
       <img
-        className="tecnologias-iconos"
+        className={clase}
         src="https://skillicons.dev/icons?i=materialui"
         alt="Material UI"
       />
       <img
-        className="tecnologias-iconos"
+        className={clase}
         src="https://skillicons.dev/icons?i=jest"
         alt="Jest"
       />
       <img
-        className="tecnologias-iconos"
+        className={clase}
         src="https://skillicons.dev/icons?i=svelte"
         alt="Svelt"
       />
       <img
-        className="tecnologias-iconos"
+        className={clase}
         src="https://skillicons.dev/icons?i=figma"
         alt="Figma"
       />
       {/* BACK */}
       <img
-        className="tecnologias-iconos"
+        className={clase}
         src="https://skillicons.dev/icons?i=nodejs"
         alt="NodeJs"
       />
       <img
-        className="tecnologias-iconos"
+        className={clase}
         src="https://skillicons.dev/icons?i=express"
         alt="Express"
       />
       <img
-        className="tecnologias-iconos"
+        className={clase}
         src="https://skillicons.dev/icons?i=nestjs"
         alt="NestJs"
       />{" "}
       <img
-        className="tecnologias-iconos"
+        className={clase}
         src="https://skillicons.dev/icons?i=go"
         alt="GO"
       />
       <img
-        className="tecnologias-iconos"
+        className={clase}
         src="https://skillicons.dev/icons?i=cs"
         alt="C#"
       />
       <img
-        className="tecnologias-iconos"
+        className={clase}
         src="https://skillicons.dev/icons?i=aws"
         alt="AWS"
       />
       {/* DATABASE */}
       <img
-        className="tecnologias-iconos"
+        className={clase}
         src="https://skillicons.dev/icons?i=postgres"
         alt="Postgres"
       />
       <img
-        className="tecnologias-iconos"
+        className={clase}
         src="https://skillicons.dev/icons?i=mongodb"
         alt="MongoDB"
       />
       <img
-        className="tecnologias-iconos"
+        className={clase}
         src="https://skillicons.dev/icons?i=mysql"
         alt="MySql"
       />
       {/* TOOLS */}
       <img
-        className="tecnologias-iconos"
+        className={clase}
         src="https://skillicons.dev/icons?i=git"
         alt="Git"
       />
       <img
-        className="tecnologias-iconos"
+        className={clase}
         src="https://skillicons.dev/icons?i=webpack"
         alt="Webpack"
       />
+      <Boton onClick={()=>(cambiarVisibilidad())} nombre={clase === "hidden"? "More" : "Less"} />
     </div>
   );
 };

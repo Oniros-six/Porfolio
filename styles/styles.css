@@ -569,8 +569,12 @@ video {
   --tw-border-opacity: 1;
   border-color: rgb(112 26 117 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
-  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
+  background-color: rgb(156 163 175 / var(--tw-bg-opacity));
   padding: 0.5rem;
+}
+.dark .tecnologias-box {
+  --tw-bg-opacity: 1;
+  background-color: rgb(55 65 81 / var(--tw-bg-opacity));
 }
 /* TECNOLOGIAS END */
 @media (min-width: 640px) {
@@ -614,3 +618,6 @@ video {
   }
 @media (min-width: 1280px) {
   }
+.hidden {
+  display: none;
+}

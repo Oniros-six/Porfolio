@@ -60,7 +60,7 @@
 
   /* TECNOLOGIAS */
   .tecnologias-box{
-    @apply bg-gray-300 border-4 border-primary p-2 m-2 grid grid-cols-5 gap-2
+    @apply  bg-gray-400 dark:bg-gray-700 border-4 border-primary p-2 m-2 grid grid-cols-5 gap-2
   }
 
 /* TECNOLOGIAS END */

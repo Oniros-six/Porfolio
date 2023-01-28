@@ -576,6 +576,10 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(55 65 81 / var(--tw-bg-opacity));
 }
+.tecnologias-icono {
+  display: none;
+  width: 2rem;
+}
 /* TECNOLOGIAS END */
 @media (min-width: 640px) {
     .icon-theme {
@@ -613,11 +617,17 @@ video {
     line-height: 2rem;
     font-weight: 600;
   }
+
+    .tecnologias-box {
+    grid-template-columns: repeat(8, minmax(0, 1fr));
+  }
+
   }
 @media (min-width: 1024px) {
+
+    .tecnologias-box {
+    grid-template-columns: repeat(10, minmax(0, 1fr));
+  }
   }
 @media (min-width: 1280px) {
   }
-.hidden {
-  display: none;
-}

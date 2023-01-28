@@ -1,42 +1,43 @@
-import React,{useState} from "react";
-import Boton from "../Boton"
+import React, { useState } from "react";
+import Boton from "../Boton";
 
 const Tecnologias = () => {
-  const [clase, setClase] = useState("hidden")
+  const [clase, setClase] = useState(" tecnologias-icono");
 
- const cambiarVisibilidad = () =>{
-    if(clase === "hidden"){
-      setClase("visibile")
-    }else{
-      setClase("hidden")
-    }
-  }
   
+  const cambiarVisibilidad = () => {
+    if (clase === "tecnologias-icono") {
+      setClase(clase + "-expand");
+    } else {
+      setClase("tecnologias-icono");
+    }
+  };
+
   return (
     <div className="tecnologias-box">
       {/* FRONT */}
       <img
-      
+        className={clase}
         src="https://skillicons.dev/icons?i=html"
         alt="HTML"
       />
       <img
-      
+        className={clase}
         src="https://skillicons.dev/icons?i=css"
         alt="Css"
       />
       <img
-  
+        className={clase}
         src="https://skillicons.dev/icons?i=js"
         alt="Javascript"
       />
       <img
-        
+        className={clase}
         src="https://skillicons.dev/icons?i=ts"
         alt="Typescript"
       />
       <img
-        
+        className={clase}
         src="https://skillicons.dev/icons?i=react"
         alt="React"
       />
@@ -90,17 +91,9 @@ const Tecnologias = () => {
         className={clase}
         src="https://skillicons.dev/icons?i=nestjs"
         alt="NestJs"
-      />{" "}
-      <img
-        className={clase}
-        src="https://skillicons.dev/icons?i=go"
-        alt="GO"
       />
-      <img
-        className={clase}
-        src="https://skillicons.dev/icons?i=cs"
-        alt="C#"
-      />
+      <img className={clase} src="https://skillicons.dev/icons?i=go" alt="GO" />
+      <img className={clase} src="https://skillicons.dev/icons?i=cs" alt="C#" />
       <img
         className={clase}
         src="https://skillicons.dev/icons?i=aws"
@@ -133,7 +126,10 @@ const Tecnologias = () => {
         src="https://skillicons.dev/icons?i=webpack"
         alt="Webpack"
       />
-      <Boton onClick={()=>(cambiarVisibilidad())} nombre={clase === "hidden"? "More" : "Less"} />
+      <Boton
+        onClick={() => cambiarVisibilidad()}
+        nombre={clase === "tecnologias-icono" ? "More" : "Less"}
+      />
     </div>
   );
 };

@@ -63,6 +63,12 @@
     @apply  bg-gray-400 dark:bg-gray-700 border-4 border-primary p-2 m-2 grid grid-cols-5 gap-2
   }
 
+  .tecnologias-icono{
+    @apply w-8 hidden
+  }
+  .tecnologias-icono-expand{
+    @apply w-8 
+  }
 /* TECNOLOGIAS END */
 
 
@@ -88,9 +94,18 @@
     .descripcion {
       @apply text-2xl font-semibold;
     }
+
+    .tecnologias-box{
+      @apply grid-cols-8
+    }
+
   }
 
   @screen lg {
+
+    .tecnologias-box{
+      @apply grid-cols-10
+    }
   }
 
   @screen xl {

@@ -1,20 +1,20 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import Boton from "../Boton";
 
 const Tecnologias = () => {
-  const [clase, setClase] = useState(" tecnologias-icono");
+  const [clase, setClase] = useState("tecnologias-icono");
+  const prueba = useRef(null);
 
-  
   const cambiarVisibilidad = () => {
     if (clase === "tecnologias-icono") {
       setClase(clase + "-expand");
+      console.log(getComputedStyle(prueba.current).gridColumn)
     } else {
       setClase("tecnologias-icono");
     }
   };
-
   return (
-    <div className="tecnologias-box">
+    <div ref={prueba} className="tecnologias-box">
       {/* FRONT */}
       <img
         className={clase}

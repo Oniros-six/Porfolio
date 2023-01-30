@@ -32,6 +32,7 @@ const Header = () => {
         onClick={() => {
           cambiarFondo();
         }}
+        clases="icon-theme"
         nombre={tema === "dark" ? <Moon /> : <Sun />}
       />
 

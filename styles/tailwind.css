@@ -7,7 +7,7 @@
     font-family: cursive, roboto, system-ui, sans-serif;
   }
   body {
-    @apply bg-slate-300 dark:bg-slate-900 dark:text-slate-300 m-1 sm:m-1 md:m-2 lg:m-4;
+    @apply bg-slate-300 dark:bg-slate-900 dark:text-slate-300 
   }
 
   h1 {
@@ -37,12 +37,12 @@
 
 @layer components {
   .index-main {
-    @apply m-0;
+    @apply bg-red-600
   }
 
   /* HEADER */
   .header-main {
-    @apply inline-block mb-4;
+    @apply inline-block mb-4 mt-8;
   }
 
   .titulo {
@@ -50,42 +50,33 @@
   }
 
   .icon-theme {
-    @apply w-6 h-6 rounded-xl top-0 right-0 absolute m-4;
+    @apply w-6 h-6 rounded-xl top-0 right-0 m-4 absolute hidden sm:inline-block md:inline-block lg:inline-block;
   }
 
   .descripcion {
     @apply font-semibold 
     text-xl md:text-2xl;
   }
+
+  .navbar{
+    @apply w-full h-16 dark:bg-slate-900 bg-slate-300 text-red-900 p-1 sticky 
+  }
+
+  .navbar-logo{
+    @apply h-full rounded-2xl 
+  }
+
+  .navbar-menu{
+    @apply top-4 right-4 absolute sm:hidden md:hidden lg:hidden
+  }
   /* HEADER END */
 
-  /* TECNOLOGIAS */
 
-  .tecnologias-box {
-    @apply bg-gray-400 dark:bg-gray-700 
-    border-4 
-    border-primary 
-    p-2 
-    m-2 
-    grid 
-    gap-2 
-    grid-cols-7 sm:grid-cols-9 md:grid-cols-11 lg:grid-cols-12;
-  }
-
-  .tecnologias-icono {
-    @apply hidden w-5 sm:w-7 md:w-8 lg:w-9;
-  }
-
-  .tecnologias-icono-expand {
-    @apply w-5 sm:w-7 md:w-8 lg:w-9;
-  }
-  /* TECNOLOGIAS END */
-
-  @screen sm {
-    .icon-theme {
-      @apply w-7 h-7;
+    @screen sm {
+      .icon-theme {
+        @apply w-7 h-7;
+      }
     }
-  }
 
   @screen md {
     .icon-theme {

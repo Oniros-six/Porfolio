@@ -1,14 +1,17 @@
 import React from "react";
 import Menu from "./Menu";
+import logo from "../../../assets/logo.jpg";
 
 const Navbar = () => {
   return (
-    <div className="navbar flex gap-2">
-      <img src="../../../assets/favicon.png" className="navbar-logo" />
+    <div className="navbar ">
+      <img src={logo} className="navbar-logo" />
       <div>
-        Leandro
-        <br />
-        Arrigonni
+        <p className="nombre">
+          Leandro
+          <br />
+          Arrigonni
+        </p>
       </div>
       <Menu />
     </div>

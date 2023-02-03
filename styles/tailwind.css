@@ -7,7 +7,7 @@
     font-family: cursive, roboto, system-ui, sans-serif;
   }
   body {
-    @apply bg-slate-300 dark:bg-slate-900 dark:text-slate-300 
+    @apply bg-slate-300 dark:bg-slate-900 dark:text-slate-300;
   }
 
   h1 {
@@ -37,8 +37,30 @@
 
 @layer components {
   .index-main {
-    @apply bg-red-600
+    @apply bg-green-600;
   }
+
+  /* NAVBAR */
+  .navbar {
+    @apply w-full h-10 bg-slate-300 text-black dark:bg-slate-900 dark:text-slate-300 p-1 sticky flex gap-2;
+  }
+
+  .navbar-logo {
+    @apply h-full rounded-xl;
+  }
+
+  .navbar-menu {
+    @apply top-1 right-3 absolute sm:hidden md:hidden lg:hidden bg-slate-300 p-1 rounded-md ;
+  }
+
+  .bars-logo {
+    @apply w-5
+  }
+
+  .nombre {
+    @apply text-xs;
+  }
+  /* NAVBAR END */
 
   /* HEADER */
   .header-main {
@@ -58,25 +80,13 @@
     text-xl md:text-2xl;
   }
 
-  .navbar{
-    @apply w-full h-16 dark:bg-slate-900 bg-slate-300 text-red-900 p-1 sticky 
-  }
-
-  .navbar-logo{
-    @apply h-full rounded-2xl 
-  }
-
-  .navbar-menu{
-    @apply top-4 right-4 absolute sm:hidden md:hidden lg:hidden
-  }
   /* HEADER END */
 
-
-    @screen sm {
-      .icon-theme {
-        @apply w-7 h-7;
-      }
+  @screen sm {
+    .icon-theme {
+      @apply w-7 h-7;
     }
+  }
 
   @screen md {
     .icon-theme {

@@ -39,6 +39,7 @@ const Header = () => {
       <div className="descripcion">
         Developer by choice and designer for fun
       </div>
+
     </header>
   );
 };

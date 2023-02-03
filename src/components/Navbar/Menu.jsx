@@ -4,7 +4,7 @@ import { ReactComponent as Bars } from  "../../../assets/bars-solid.svg";
 const Menu = () => {
   return (
     <div className="navbar-menu">
-      <Bars className="w-7"/>
+      <Bars className="bars-logo"/>
     </div>
   );
 };

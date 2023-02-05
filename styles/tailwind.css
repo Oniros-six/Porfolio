@@ -37,12 +37,12 @@
 
 @layer components {
   .index-main {
-    @apply bg-green-600;
+    @apply ring-2 ring-border bg-terceario;
   }
 
   /* NAVBAR */
   .navbar {
-    @apply w-full h-10 bg-slate-300 text-black dark:bg-slate-900 dark:text-slate-300 p-1 sticky flex gap-2;
+    @apply w-full h-10 md:h-14 bg-slate-300 text-black dark:bg-slate-900 dark:text-slate-300 ring-2 ring-border p-1 sticky flex gap-2;
   }
 
   .navbar-logo {
@@ -50,15 +50,15 @@
   }
 
   .navbar-menu {
-    @apply top-1 right-3 absolute sm:hidden md:hidden lg:hidden bg-slate-300 p-1 rounded-md ;
+    @apply top-1 right-3 absolute sm:hidden md:hidden lg:hidden bg-slate-300 p-1 rounded-md;
   }
 
   .bars-logo {
-    @apply w-5
+    @apply w-5;
   }
 
   .nombre {
-    @apply text-xs;
+    @apply text-xs md:text-lg ;
   }
   /* NAVBAR END */
 
@@ -76,7 +76,7 @@
   }
 
   .descripcion {
-    @apply font-semibold 
+    @apply font-semibold p-2
     text-xl md:text-2xl;
   }
 

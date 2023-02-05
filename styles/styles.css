@@ -526,6 +526,8 @@ video {
   display: flex;
   height: 2.5rem;
   width: 100%;
+  flex-wrap: wrap;
+  align-content: center;
   gap: 0.5rem;
   --tw-bg-opacity: 1;
   background-color: rgb(203 213 225 / var(--tw-bg-opacity));
@@ -554,10 +556,11 @@ video {
   height: 100%;
   border-radius: 0.75rem;
 }
-.navbar-menu {
+.bars-logo {
   position: absolute;
   top: 0.25rem;
   right: 0.75rem;
+  width: 1.25rem;
   border-radius: 0.375rem;
   --tw-bg-opacity: 1;
   background-color: rgb(203 213 225 / var(--tw-bg-opacity));
@@ -565,24 +568,21 @@ video {
 }
 @media (min-width: 640px) {
 
-  .navbar-menu {
+  .bars-logo {
     display: none;
   }
 }
 @media (min-width: 768px) {
 
-  .navbar-menu {
+  .bars-logo {
     display: none;
   }
 }
 @media (min-width: 1024px) {
 
-  .navbar-menu {
+  .bars-logo {
     display: none;
   }
-}
-.bars-logo {
-  width: 1.25rem;
 }
 .nombre {
   font-size: 0.75rem;

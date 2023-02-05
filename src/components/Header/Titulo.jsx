@@ -30,7 +30,11 @@ const Titulo = (prop) => {
 
     const rect = titulo.current.getBoundingClientRect();
     const screenWidth = window.innerWidth;
-    const xPos = (screenWidth - rect.width) / 2;
+    let xPos = (screenWidth - rect.width) / 2;
+
+    if(screenWidth < 600){
+      xPos = 0
+    }
 
     anime.timeline().add({
       targets: ".titulo",

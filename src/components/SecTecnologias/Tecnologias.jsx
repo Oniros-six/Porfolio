@@ -8,7 +8,10 @@ const Tecnologias = () => {
   const cambiarVisibilidad = () => {
     if (clase === "tecnologias-icono") {
       setClase(clase + "-expand");
-      console.log(getComputedStyle(prueba.current).gridColumn)
+      const gridTemplateColumns = getComputedStyle(prueba.current).gridTemplateColumns;
+      const columnCount = gridTemplateColumns.split(" ").length;
+      //Dependiendo de cuantas columnas tenga que clase añado o quito para otorgar fleXIBILIDAD
+      
     } else {
       setClase("tecnologias-icono");
     }

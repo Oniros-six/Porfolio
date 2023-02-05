@@ -10,7 +10,7 @@ const LateralNav = (props) => {
     theme[1]()
     setShowNav(false)
   }
-
+console.log(theme[0])
   return (
     <div>
       {showNav && (
@@ -25,7 +25,7 @@ const LateralNav = (props) => {
           <h3>abc</h3>
           <Boton
             onClick={() => OnThemeChange()}
-            nombre={theme.tema === "dark" ? "Oscurecer" : "Aclarar"}
+            nombre={theme[0] === "dark" ? "Oscurecer" : "Aclarar"}
           />
         </div>
       )}

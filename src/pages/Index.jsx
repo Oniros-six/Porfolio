@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Header from "../components/Header/Header";
-import LateralNav from "../components/Navbar/lateralNav";
+import LateralNav from "../components/Navbar/LateralNav";
 import Navbar from "../components/Navbar/Navbar";
 
 const Index = () => {

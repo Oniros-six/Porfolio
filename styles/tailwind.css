@@ -37,7 +37,7 @@
 
 @layer components {
   .index-main {
-    @apply ring-2 ring-border bg-terceario;
+    @apply ring-2 ring-border bg-terceario relative;
   }
 
   /* NAVBAR */
@@ -50,11 +50,15 @@
   }
 
   .bars-logo {
-    @apply w-5 top-1 right-3 absolute sm:hidden md:hidden lg:hidden bg-slate-300 p-1 rounded-md;
+    @apply w-5 top-2 right-3 absolute sm:hidden md:hidden lg:hidden bg-slate-300 p-1 rounded-md;
   }
 
   .nombre {
     @apply text-xs md:text-lg;
+  }
+
+  .lateralNav{
+    @apply bg-slate-300 dark:bg-slate-900 z-20 absolute right-0 p-5 w-fit border-l-2 border-b-2 border-border
   }
   /* NAVBAR END */
 

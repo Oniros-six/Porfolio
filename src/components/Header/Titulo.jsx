@@ -31,13 +31,9 @@ const Titulo = (prop) => {
     const rect = titulo.current.getBoundingClientRect();
     const screenWidth = window.innerWidth;
     let xPos = (screenWidth - rect.width) / 2;
-    //60; 20; 30 son valores que consegui a ensayo y error, seguramente alguna formula me de el valor mas apropiado
-    if(rect.width < 305){
-      xPos += 60
-    } else if (rect.width < 360){
-      xPos += 20
-    } else if (rect.width < 388){
-      xPos += 30
+
+    if(screenWidth < 600){
+      xPos = 0
     }
 
     anime.timeline().add({

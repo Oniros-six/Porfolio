@@ -2,7 +2,9 @@ import React from "react";
 import Menu from "./Menu";
 import logo from "../../../assets/logo.jpg";
 
-const Navbar = () => {
+const Navbar = (props) => {
+  const {setShowNav, showNav} = props;
+
   return (
     <div className="navbar ">
       <img src={logo} className="navbar-logo" />
@@ -13,7 +15,7 @@ const Navbar = () => {
           Arrigonni
         </p>
       </div>
-      <Menu />
+      <Menu showNav={showNav} setShowNav={setShowNav} />
     </div>
   );
 };
